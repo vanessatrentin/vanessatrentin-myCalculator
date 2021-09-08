@@ -1,0 +1,25 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#calculator{
+    margin: 100px;
+    width: 300px;
+}
+
+button, input{
+    width: 55px;
+    height: 55px;
+    margin: 10px 5px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+input{
+    width: 100%;
+    text-align: right;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
