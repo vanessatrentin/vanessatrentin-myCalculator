@@ -1,63 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
-    <div id='calculator'>
-        <h1>Calculator</h1>
+  <body>
+    <div id="calculator">
+      <h1>Calculator</h1>
+      <div class="output">
+        <div data-prior-operand></div>
+        <div data-current-operand></div>
+      </div>
+      <div>
+        <button data-all-clear>AC</button>
+        <button data-delete>CC</button>
+        <button data-operand>/</button>
+        <button data-operand>-</button>
+      </div>
+      <div>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operand>+</button>
+      </div>
+      <div>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operand>*</button>
+      </div>
+      <div>
         <div>
-            <p id="showEquation">0</p>
-            <input id='calculatorEntries' type="text" value="0">
+          <button data-number>1</button>
+          <button data-number>2</button>
+          <button data-number>3</button>
         </div>
         <div>
-            <button id='allClear'>AC</button>
-            <button id='clearContent'>CC</button>
-<!--             <button id='divide'>/</button>
-            <button id='subtraction'>-</button> -->
+          <button data-number>.</button>
+          <button data-number>0</button>
         </div>
-<!--         <div>
-            <button id='number7'>7</button>
-            <button id='number8'>8</button>
-            <button id='number9'>9</button>
-            <button id='addition'>+</button>
-        </div> -->
-        <div>
-            <!-- <button id='number4'>4</button>
-            <button id='number5'>5</button>
-            <button id='number6'>6</button> -->
-            <button id='multiplication'>*</button>
-        </div>
-        <div>
-            <div>
-                <button id='number1'>1</button>
-                <button id='numberTwo'>2</button>
-                <!-- <button id='number3'>3</button> -->
-            </div>
-            <div>
-<!--                 <button id='fraction'>,</button>
-                <button id='number0'>0</button> -->
-            </div>
-        </div>
-        <div>
-            <button id='result'>=</button>
-        </div>
+      </div>
+      <div>
+        <button data-result>=</button>
+      </div>
     </div>
 
-
-
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
